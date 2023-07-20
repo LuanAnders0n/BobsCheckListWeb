@@ -14,7 +14,7 @@ export const Container = styled.div`
     h3 {
       font-size: 10px;
       border: 1px solid #000;
-      height: 180px;
+      height: 100px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -23,7 +23,7 @@ export const Container = styled.div`
     .response {
       border: 1px solid #000;
       padding: 10px;
-      height: 180px;
+      height: 100px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -35,7 +35,7 @@ export const Container = styled.div`
 
     #YES {
       width: 100px;
-      height: 180px;
+      height: 100px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -43,7 +43,7 @@ export const Container = styled.div`
     }
     #NO {
       width: 100px;
-      height: 180px;
+      height: 100px;
       display: flex;
       justify-content: center;
       align-items: center;
