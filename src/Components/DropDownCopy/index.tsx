@@ -1,7 +1,20 @@
 import React, { useState } from 'react';
 import { Sidenav, DropdownContainer, DropdownItem, CaretIcon } from './styled';
+import CheckboxInput from '../DropDown/components/CheckBox';
 
-const DropdownMenu: React.FC = () => {
+export interface DropdownItemInterface {
+  text: string;
+  weight: string;
+}
+
+interface BobsProps {
+  section: string;
+  dropdownItems?: DropdownItemInterface[];
+  response?: boolean;
+}
+
+const DropdownCopy = (props: BobsProps) => {
+  const { section, dropdownItems } = props;
   const [activeDropdown, setActiveDropdown] = useState(false);
 
   const toggleDropdown = () => {
@@ -11,22 +24,24 @@ const DropdownMenu: React.FC = () => {
   return (
     <Sidenav>
       <button className="dropdown-btn" onClick={toggleDropdown}>
-        Dropdown
+        {section}
         <CaretIcon className="fa fa-caret-down" />
       </button>
       <DropdownContainer style={{ display: activeDropdown ? 'block' : 'none' }}>
-        <DropdownItem href="#" active={false}>
-          Link 1
-        </DropdownItem>
-        <DropdownItem href="#" active={false}>
-          Link 2
-        </DropdownItem>
-        <DropdownItem href="#" active={false}>
-          Link 3
-        </DropdownItem>
+        {dropdownItems?.map(item => (
+          <DropdownItem active={false}>
+            <p>{item.weight}</p>
+            <p>{item.text}</p>
+
+            <CheckboxInput />
+            <p>SIM</p>
+            <CheckboxInput />
+            <p>NÃO</p>
+          </DropdownItem>
+        ))}
       </DropdownContainer>
     </Sidenav>
   );
 };
 
-export default DropdownMenu;
+export default DropdownCopy;

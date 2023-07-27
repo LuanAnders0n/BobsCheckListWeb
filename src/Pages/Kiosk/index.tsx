@@ -6,7 +6,8 @@ const Kiosk = () => {
   return (
     <div>
       <Container>
-        <DropdownMenu></DropdownMenu>
+        <DropdownMenu time="Abertura" />
+        <DropdownMenu time="Passagem" />
         <button className="button">
           <a href="/">Voltar</a>
         </button>

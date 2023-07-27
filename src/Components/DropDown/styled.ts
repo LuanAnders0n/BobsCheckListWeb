@@ -4,7 +4,7 @@ export const Sidenav = styled.div`
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #c9702c;
+  background-color: #941913;
   overflow-x: hidden;
 
   .dropdown-btn {
@@ -46,7 +46,7 @@ export const SidenavLink = styled.a`
 
 export const DropdownContainer = styled.div`
   display: none;
-  background-color: #c9702c;
+  background-color: #941913;
   padding-left: 8px;
 `;
 
