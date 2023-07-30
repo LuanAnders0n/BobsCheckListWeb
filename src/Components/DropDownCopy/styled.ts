@@ -4,14 +4,14 @@ export const Sidenav = styled.div`
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #c8423a;
+  background-color: #f64b4b;
   overflow-x: hidden;
 
   .dropdown-btn {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #000;
+    color: #fff;
     display: block;
     border: none;
     background: none;
@@ -19,10 +19,6 @@ export const Sidenav = styled.div`
     text-align: left;
     cursor: pointer;
     outline: none;
-
-    &:hover {
-      color: #f1f1f1;
-    }
   }
 `;
 
@@ -42,7 +38,7 @@ export const SidenavLink = styled.a`
 
 export const DropdownContainer = styled.div`
   display: none;
-  background-color: #f6c4c1;
+  background-color: #f9eaea;
 `;
 
 interface DropdownItemProps {

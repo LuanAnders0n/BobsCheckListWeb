@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   body, input, button {
-    font: 400 16px 'Poppins', sans-serif;
+    font: 400 16px 'inter', sans-serif;
   }
 
 input{

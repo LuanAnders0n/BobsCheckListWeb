@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 820px) {
     display: flex;
 
     h1 {
