@@ -23,11 +23,25 @@ export const Container = styled.div`
     width: 200px;
   }
 
-  h1 {
+  .h1 {
     font-size: 30px;
     font-weight: bolder;
     color: #fff;
     margin-left: 3px;
+  }
+  .h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-right: 10px;
+  }
+
+  .body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-weight: 900;
   }
 
   .back {

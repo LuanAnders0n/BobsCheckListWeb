@@ -1,33 +1,47 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { Container } from '../../../Components/DropDown/components/styled';
 
-const CheckboxInput: React.FC = () => {
-  const [checked, setChecked] = useState<boolean>(false);
+const CheckboxWithTextInput: React.FC = () => {
+  const [isChecked, setIsChecked] = useState<boolean>(false);
+  const [textInputValue, setTextInputValue] = useState<string>('');
 
-  useEffect(() => {
-    // Verifica se há um valor salvo no localStorage
-    const checkboxStatus = localStorage.getItem('checkboxStatus');
-
-    // Se houver um valor no localStorage, aplica esse valor no estado da checkbox
-    if (checkboxStatus !== null) {
-      setChecked(JSON.parse(checkboxStatus));
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setIsChecked(event.target.checked);
+    if (!event.target.checked) {
+      setTextInputValue('');
     }
-  }, []);
+  };
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { checked } = event.target;
-    setChecked(checked);
-
-    // Salva o estado da checkbox no localStorage
-    localStorage.setItem('checkboxStatus', JSON.stringify(checked));
+  const handleTextInputChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setTextInputValue(event.target.value);
   };
 
   return (
     <div>
-      <label>
-        <input type="checkbox" checked={checked} onChange={handleChange} />
-      </label>
+      <Container>
+        <div className="body">
+          <label>
+            <input
+              type="checkbox"
+              checked={isChecked}
+              onChange={handleCheckboxChange}
+            />
+            <p>Não</p>
+          </label>
+
+          {isChecked && (
+            <input
+              type="text"
+              value={textInputValue}
+              onChange={handleTextInputChange}
+              placeholder="Justificativa"
+            />
+          )}
+        </div>
+      </Container>
     </div>
   );
 };
-
-export default CheckboxInput;
+export default CheckboxWithTextInput;

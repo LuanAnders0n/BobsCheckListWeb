@@ -4,14 +4,9 @@ import DropDownCopy from '../DropDownCopy/index';
 import {
   cupItems,
   balcaoItems,
-  machineHouseItems,
   estorageItems,
-  frieItems,
   adminItems,
   peopleItems,
-  treashRoomItems,
-  greenItems,
-  roomItems,
 } from './components/DropdownItems';
 
 export interface ResponseArray {
@@ -23,7 +18,7 @@ interface TimeProps {
   responseArray?: ResponseArray;
 }
 
-const DropdownMenu = (props: TimeProps) => {
+const DropdownMenuKiosk = (props: TimeProps) => {
   const [activeDropdown, setActiveDropdown] = useState(false);
 
   const toggleDropdown = () => {
@@ -39,25 +34,14 @@ const DropdownMenu = (props: TimeProps) => {
       <DropdownContainer style={{ display: activeDropdown ? 'block' : 'none' }}>
         <DropdownItem active={false}>
           <DropDownCopy section="BALCÃO" dropdownItems={balcaoItems} />
-          <DropDownCopy
-            section="CASA DE MAQUINAS"
-            dropdownItems={machineHouseItems}
-          />
+
           <DropDownCopy section="COPA" dropdownItems={cupItems} />
           <DropDownCopy section="ESTOQUE" dropdownItems={estorageItems} />
-          <DropDownCopy section="FRITADEIRA" dropdownItems={frieItems} />
           <DropDownCopy section="GERENCIA" dropdownItems={adminItems} />
           <DropDownCopy
-            section="GESTÃO DE PESSOAS
-"
+            section="GESTÃO DE PESSOAS"
             dropdownItems={peopleItems}
           />
-          <DropDownCopy
-            section="SALA DE LIXO"
-            dropdownItems={treashRoomItems}
-          />
-          <DropDownCopy section="SALADEIRA" dropdownItems={greenItems} />
-          <DropDownCopy section="SALÃO" dropdownItems={roomItems} />
         </DropdownItem>
         <DropdownItem active={false}></DropdownItem>
       </DropdownContainer>
@@ -65,4 +49,4 @@ const DropdownMenu = (props: TimeProps) => {
   );
 };
 
-export default DropdownMenu;
+export default DropdownMenuKiosk;

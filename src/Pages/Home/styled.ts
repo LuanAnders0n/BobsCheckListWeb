@@ -49,7 +49,6 @@ export const Container = styled.div`
     margin: 15px;
     border-radius: 25px;
     background: #d24141;
-    box-shadow: inset 16px 16px 32px #952e2e, inset -16px -16px 32px #ff5454;
   }
   .a2 {
     font-size: 100px;
@@ -61,7 +60,6 @@ export const Container = styled.div`
     margin: 15px;
     border-radius: 25px;
     background: #d24141;
-    box-shadow: inset 16px 16px 32px #952e2e, inset -16px -16px 32px #ff5454;
   }
 
   .end {
