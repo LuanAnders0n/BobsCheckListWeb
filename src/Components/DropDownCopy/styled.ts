@@ -39,6 +39,13 @@ export const SidenavLink = styled.a`
 export const DropdownContainer = styled.div`
   display: none;
   background-color: #f9eaea;
+
+  input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 interface DropdownItemProps {

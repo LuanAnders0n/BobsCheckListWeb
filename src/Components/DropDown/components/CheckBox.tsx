@@ -33,6 +33,7 @@ const CheckboxWithTextInput: React.FC = () => {
 
           {isChecked && (
             <input
+              className="textInput"
               type="text"
               value={textInputValue}
               onChange={handleTextInputChange}

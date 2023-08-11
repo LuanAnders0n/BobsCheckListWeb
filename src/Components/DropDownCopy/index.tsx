@@ -32,9 +32,11 @@ const DropdownCopy = (props: BobsProps) => {
           <DropdownItem active={false}>
             <p>{item.weight}</p>
             <p>{item.text}</p>
+            <div>
+              <input type="checkbox" />
+              <p>Sim</p>
+            </div>
 
-            <input type="checkbox" />
-            <p>Sim</p>
             <CheckboxInput />
           </DropdownItem>
         ))}

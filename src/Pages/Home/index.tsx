@@ -21,6 +21,12 @@ const Home = () => {
           </a>
         </div>
 
+        <div className="btn">
+          <a className="a2" href="/teste">
+            Teste
+          </a>
+        </div>
+
         <div className="end"></div>
       </Container>
     </div>
