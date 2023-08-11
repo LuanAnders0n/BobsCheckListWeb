@@ -8,7 +8,8 @@ import html2canvas from 'html2canvas';
 
 const Kiosk = () => {
   const captureRef = useRef(null);
-
+  const date = new Date();
+  const formattedDate = date.toLocaleDateString('en-GB');
   const captureAndSavePDF = async () => {
     if (captureRef.current) {
       const canvas = await html2canvas(captureRef.current);
@@ -24,11 +25,12 @@ const Kiosk = () => {
       const x = (pdfWidth - imgWidth) / 2;
       const y = (pdfHeight - imgHeight) / 2;
 
+      const fileName = `CheckListQuiosque_${formattedDate}.pdf`;
+
       pdf.addImage(imgData, 'PNG', x, y, imgWidth, imgHeight);
-      pdf.save('CheckList.pdf');
+      pdf.save(fileName);
     }
   };
-
   return (
     <div>
       <div ref={captureRef}>
