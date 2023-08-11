@@ -40,22 +40,22 @@ export const Container = styled.div`
   }
 
   .a1 {
-    font-size: 100px;
+    font-size: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 400px;
     color: #fff;
     margin: 15px;
     border-radius: 25px;
     background: #d24141;
   }
   .a2 {
-    font-size: 100px;
+    font-size: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 400px;
     color: #fff;
     margin: 15px;
     border-radius: 25px;

@@ -25,14 +25,14 @@ const Store = () => {
       const y = (pdfHeight - imgHeight) / 2;
 
       pdf.addImage(imgData, 'PNG', x, y, imgWidth, imgHeight);
-      pdf.save('captured_element.pdf');
+      pdf.save('CheckList.pdf');
     }
   };
 
   return (
     <div>
-      <div ref={captureRef}>
-        <Container>
+      <Container>
+        <div ref={captureRef}>
           <div className="logo-div">
             <img className="logo" src={bobs} alt="" />
             <h1 className="h1">CHECK LIST</h1>
@@ -43,14 +43,16 @@ const Store = () => {
           </div>
           <DropdownMenu time="Abertura" />
           <DropdownMenu time="Passagem" />
-        </Container>
-      </div>
-      <div className="back">
-        <a className="a1" href="/">
-          Voltar
-        </a>
-        <button onClick={captureAndSavePDF}>Capturar e Salvar como PDF</button>
-      </div>
+        </div>
+        <div className="back">
+          <a className="a1" href="/">
+            Voltar
+          </a>
+          <button onClick={captureAndSavePDF}>
+            Capturar e Salvar como PDF
+          </button>
+        </div>
+      </Container>
     </div>
   );
 };

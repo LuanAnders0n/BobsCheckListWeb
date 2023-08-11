@@ -25,7 +25,7 @@ const Kiosk = () => {
       const y = (pdfHeight - imgHeight) / 2;
 
       pdf.addImage(imgData, 'PNG', x, y, imgWidth, imgHeight);
-      pdf.save('captured_element.pdf');
+      pdf.save('CheckList.pdf');
     }
   };
 
