@@ -24,6 +24,25 @@ export const Sidenav = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: 750px) {
+      padding: 3px 4px 3px 8px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #f1f1f1;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      font-weight: 900;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 `;
 
@@ -39,6 +58,20 @@ export const SidenavLink = styled.a`
   text-align: left;
   cursor: pointer;
   outline: none;
+
+  @media only screen and (max-width: 750px) {
+    padding: 3px 4px 3px 8px;
+    text-decoration: none;
+    font-size: 11px;
+    color: #f1f1f1;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
 `;
 
 export const DropdownContainer = styled.div`

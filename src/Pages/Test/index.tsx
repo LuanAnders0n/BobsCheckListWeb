@@ -16,7 +16,7 @@ const Test = () => {
       const pdfWidth = 210; // A4 paper width in mm
       const pdfHeight = 290; // A4 paper height in mm
       const imgWidth = 200; // Adjust the image width
-      const imgHeight = 285; // Calculate proportional height
+      const imgHeight = 280; // Calculate proportional height
 
       const x = (pdfWidth - imgWidth) / 2; // Center horizontally
       const y = (pdfHeight - imgHeight) / 2; // Center vertically

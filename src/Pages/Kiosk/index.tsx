@@ -33,8 +33,8 @@ const Kiosk = () => {
   };
   return (
     <div>
-      <div ref={captureRef}>
-        <Container>
+      <Container>
+        <div ref={captureRef}>
           <div>
             <div className="logo-div">
               <img className="logo" src={bobs} alt="" />
@@ -47,16 +47,16 @@ const Kiosk = () => {
             <DropdownMenu time="Abertura" />
             <DropdownMenu time="Passagem" />
           </div>
-        </Container>
-        <div className="back">
-          <a className="a1" href="/">
-            Voltar
-          </a>
-          <button onClick={captureAndSavePDF}>
-            Capturar e Salvar como PDF
-          </button>
+          <div className="back">
+            <a className="a1" href="/">
+              Voltar
+            </a>
+            <button onClick={captureAndSavePDF}>
+              Capturar e Salvar como PDF
+            </button>
+          </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

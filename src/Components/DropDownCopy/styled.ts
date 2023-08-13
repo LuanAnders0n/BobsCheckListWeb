@@ -19,6 +19,20 @@ export const Sidenav = styled.div`
     text-align: left;
     cursor: pointer;
     outline: none;
+
+    @media only screen and (max-width: 750px) {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
   }
 `;
 
@@ -34,6 +48,20 @@ export const SidenavLink = styled.a`
   text-align: left;
   cursor: pointer;
   outline: none;
+
+  @media only screen and (max-width: 750px) {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
 `;
 
 export const DropdownContainer = styled.div`
@@ -70,6 +98,20 @@ export const DropdownItem = styled(SidenavLink)<DropdownItemProps>`
     height: 17px;
     margin: 3px;
     border-radius: 30px;
+  }
+
+  @media only screen and (max-width: 750px) {
+    p {
+      margin-right: 5px;
+      font-size: 12px;
+    }
+
+    .input {
+      width: 10px;
+      height: 17px;
+      margin: 3px;
+      border-radius: 30px;
+    }
   }
 `;
 

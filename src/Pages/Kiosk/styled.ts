@@ -61,4 +61,15 @@ export const Container = styled.div`
     width: 200px;
     color: #fff;
   }
+
+  button {
+    background-color: #fa2525;
+    border: none;
+    color: #fff;
+    width: 250px;
+    height: 30px;
+    font-weight: 900;
+    border-radius: 30px;
+    margin-left: 10px;
+  }
 `;
