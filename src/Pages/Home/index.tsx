@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from './styled';
 import bobs from '../../images/bobs.svg';
-
 const Home = () => {
   return (
     <div>
@@ -18,12 +17,6 @@ const Home = () => {
         <div className="btn">
           <a className="a2" href="/kiosk">
             QUIOSQUE
-          </a>
-        </div>
-
-        <div className="btn">
-          <a className="a2" href="/teste">
-            Teste
           </a>
         </div>
 
